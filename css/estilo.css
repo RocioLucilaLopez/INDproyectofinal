@@ -6,8 +6,8 @@ body { font-family: ubuntu, sans-serif;
       font-weight: bold; }
 
 /*general NAV*/
-.navbar {background-image: url(../Assets/img/footerBg.jpg);}
-.navbar .nav-item a {color: white;}
+.navbar {background-image: url(../Assets/img/navBg4.jpg);}
+.navbar-nav a {font-weight: bold; color: white;}
 
 /*general FOOTER*/
 
@@ -36,22 +36,25 @@ h3 a:hover{color: black;}
   transform: translateY(-10px); }
 
 .cophyright__copy {
+  text-align: center;
   text-decoration: none;
   display: flex;
-  justify-content: center; }
+  justify-content: center; 
+  }
 
 .creador__creadorPagina {
   text-decoration: none;
   display: flex;
   justify-content: center;
   font-family: 'Ubuntu';
-  font-size: 10px; }
+  font-size: 15px; 
+}
 
 .creadorPagina__creador {
   position: relative;
   left: 5px;
   text-decoration: none;
-  color: black !important; }
+  color: lightgrey; !important; }
 
 .creadorPagina__creador:hover {
   color: white !important; }
@@ -78,7 +81,19 @@ div .col-lg-4 {justify-content: right;}
 .destacadosCards {padding-left: 100px;padding-top: 25px;} @media only screen and (max-width: 767px){ 
    .destacadosCards {padding-left: 45px;}
    }
-.carousel .inner {width: 100px;}
+.carousel .inner {width: 100%;}
+.invitacion__catalogo { 
+  text-decoration: none; 
+  color: black;
+  padding: 40px; 
+  font-weight: bold;
+  text-align: center;
+  border-width: 3px;}
+.invitacion__catalogo 
+    h2 a {color: black;}
+    h2 a:hover {color: grey;}
+
+
 
 /*CONTACTO*/
 
@@ -115,15 +130,19 @@ h1.titulo__catalogo{text-align: center; padding-top: 30px;}
 /* NOSOTROS */
 .titulo__nosotros{text-align: center; padding-top: 40px;}
 .img__nosotros{padding-top:50px;padding-bottom: 50px;}
-.text__nosotros {padding-left: 90px;padding-top: 50px; text-align:justify;}
-
+.img__nosotros__circular {border-radius: 50%;}
+.text__nosotros {
+  padding-left: 40px;
+  padding-top: 50px; 
+  text-align:justify; 
+  font-size:30px; 
+  font-weight: lighter; 
+}
+col-xs-12 .text__nosotros { padding-left: 0px; text-align: center;}
 
 /* PREGUNTAS FRECUENTES */ 
-.preguntas {padding-left:40px;}
-.preguntas h3{text-align: left; 
-font-size: 20px; font-weight: normal;} 
-.preguntas p {text-align: left;
-font-size: 15px; font-weight: lighter;}
+
+ /* Titulo */ 
 
 .flexTitulo {
   display: flex;
@@ -132,7 +151,7 @@ font-size: 15px; font-weight: lighter;}
 
 .titulo__preguntasF { font-weight: normal;
   font-size: 40px;
-  color: #384369;
+  color: black;
   position: relative;
   float: left;
   padding-top: 0px; }
@@ -141,7 +160,7 @@ font-size: 15px; font-weight: lighter;}
   right: 0;
   width: 0;
   background: white;
-  border-left: 3px solid #384369;
+  border-left: 3px solid darkgrey;
   animation: escribir 4s steps(50) infinite alternate; }
 
 @keyframes escribir {
@@ -150,10 +169,14 @@ font-size: 15px; font-weight: lighter;}
   to {
     width: 0; } }
 
+ /* ubicacion elementos txt img */ 
+
+ .img__preguntasFrecuentes { justify-content: right; align-content: flex-end; }
+.titulo__PreguntasF {text-align: center;}
+.flex__Acordeon {text-align:justify;}
 
 
 /*vista desktop*/
-
     
 @media only screen and (min-width: 1024px){
 	.navbar-expand-lg .navbar-collapse {justify-content: flex-end;}
@@ -171,6 +194,7 @@ font-size: 15px; font-weight: lighter;}
 	justify-content: center; }
 	.imgLiving{justify-content: center;align-content: center;}
   .py-5 {padding-top: 0rem!important; padding-left: 15rem!important ; }
+
   /* CARDS */
   .img-tienda {
     border-radius: 40px 40px 40px 40px;
