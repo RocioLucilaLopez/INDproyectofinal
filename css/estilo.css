@@ -5,6 +5,9 @@ body { font-family: ubuntu, sans-serif;
 	 	  font-style: normal;
       font-weight: bold; }
 
+/*general NAV*/
+.navbar {background-image: url(../Assets/img/footerBg.jpg);}
+.navbar .nav-item a {color: white;}
 
 /*general FOOTER*/
 
@@ -15,7 +18,7 @@ body { font-family: ubuntu, sans-serif;
 h3 a {color: white;}
 h3 a:hover{color: black;}
 .footerBg {
-  background-color: darkgrey;
+  background-image: url(../Assets/img/footerBg.jpg);
   text-decoration: none;
   list-style-type: none; }
 
@@ -31,6 +34,27 @@ h3 a:hover{color: black;}
 
 .Redes__img-footer:hover {
   transform: translateY(-10px); }
+
+.cophyright__copy {
+  text-decoration: none;
+  display: flex;
+  justify-content: center; }
+
+.creador__creadorPagina {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-family: 'Ubuntu';
+  font-size: 10px; }
+
+.creadorPagina__creador {
+  position: relative;
+  left: 5px;
+  text-decoration: none;
+  color: black !important; }
+
+.creadorPagina__creador:hover {
+  color: white !important; }
 
 /*ANIMACION TITULOS */
 
@@ -93,6 +117,38 @@ h1.titulo__catalogo{text-align: center; padding-top: 30px;}
 .img__nosotros{padding-top:50px;padding-bottom: 50px;}
 .text__nosotros {padding-left: 90px;padding-top: 50px; text-align:justify;}
 
+
+/* PREGUNTAS FRECUENTES */ 
+.preguntas {padding-left:40px;}
+.preguntas h3{text-align: left; 
+font-size: 20px; font-weight: normal;} 
+.preguntas p {text-align: left;
+font-size: 15px; font-weight: lighter;}
+
+.flexTitulo {
+  display: flex;
+  justify-content: left;
+  padding: 40px;}
+
+.titulo__preguntasF { font-weight: normal;
+  font-size: 40px;
+  color: #384369;
+  position: relative;
+  float: left;
+  padding-top: 0px; }
+.titulo__preguntasF span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 3px solid #384369;
+  animation: escribir 4s steps(50) infinite alternate; }
+
+@keyframes escribir {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
 
 
 
