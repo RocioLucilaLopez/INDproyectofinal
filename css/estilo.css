@@ -139,7 +139,7 @@ h1.titulo__catalogo{text-align: center; padding-top: 30px;}
   font-weight: lighter; 
 }
 col-xs-12 .text__nosotros { padding-left: 0px; text-align: center;}
-
+col-xs-12 .img__nosotros{border-radius: 50%;}          
 /* PREGUNTAS FRECUENTES */ 
 
  /* Titulo */ 
