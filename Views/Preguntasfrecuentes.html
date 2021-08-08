@@ -10,6 +10,7 @@
 
 	<!--link BOOSTRAP CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<!--link mi css -->
 	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
@@ -60,23 +61,48 @@
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 flexTitulo">
 						<h1 class="titulo__preguntasF ">Preguntas frecuentes <span>&#160;</span></h1>
-				</div>
-			  <div class="row">
-					<div class="col-lg-6 col-xs-6 preguntas">
-						<h3>Cuánto demora la entrega?</h3>
-							 <p>Nuestros muebles son fabricados a pedido, dependiendo el tipo de mueble, demora entre 10 y 15 días.</p>
-						<h3>Cuales son los metodos de pago?</h3>
-							 <p>Podés abonar a través de Mercado Libre si querés abonarlo con tarjeta, o por transferencia bancaria</p>
-						<h3>Si les envío un diseño, lo hacen?</h3>
-						 	<p>Vos nos contás tu idea y nosotros la fabricamos. Hacemos muebles a medida, personalizados y de diseño, de estilo industrial y nórdico, estructuras de hierro y elementos decorativos</p>
-						<h3>Hacen envíos al interior?</h3>
-						 	<p>Hacemos envíos a todo el país, coordinamos el transporte con el cliente. El costo de envío no está incluido en el valor del producto.</p>
-						<h3>Hacen envíos al interior?</h3>
-						 	<p>Hacemos envíos a todo el país, coordinamos el transporte con el cliente. El costo de envío no está incluido en el valor del producto.</p>
-						<h3>Hacen envíos al interior?</h3>
-						 	<p>Hacemos envíos a todo el país, coordinamos el transporte con el cliente. El costo de envío no está incluido en el valor del producto.</p>
-			  </div>
-			</div>
+			  	</div>
+
+			  	<!-- inicio acordeón preguntas frecuentes -->
+
+			  	<div class="accordion" id="accordionExample">
+					 			 <div class="accordion-item">
+					   				 <h2 class="accordion-header" id="headingOne">
+					     				   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					        			 Hacen muebles a medida? Si tengo un diseño que me gusta, pueden realizarlo?
+					     				   </button>
+					   				  </h2>
+					    			<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					     				 <div class="accordion-body">
+					       			 Si, hacemos muebles a medida. Y también realizamos diseños personalizados. Es decir que, si tenes una idea en mente , nos contás y nosotros la llevamos a cabo.
+					     				 </div>
+					   				 </div>
+					 				 </div>
+					 				<div class="accordion-item">
+					   					 <h2 class="accordion-header" id="headingTwo">
+					      					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					       					 Hacen envíos a todo el país? 
+					     					 </button>
+					   					  </h2>
+					    			<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+					      			<div class="accordion-body">
+					      			Realizamos envíos a todo el país. Coordinamos el transporte de preferencia del cliente y el costo del envío corre por cuenta del mismo. El envío hasta la sucursal del transporte va por nuestra cuenta. 
+					     			 </div>
+					   			 </div>
+					 		 		</div>
+								  <div class="accordion-item">
+							  	  <h2 class="accordion-header" id="headingThree">
+							      	<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							        Con que métodos de pago cuentan?
+							      	</button>
+							    	</h2>
+							  	  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							     			 <div class="accordion-body">
+							       			Se puede abonar por transferencia bancaria/depósito , mercado pago, efectivo, o si preferís con tarjeta a través de nuestro e-shop de Mercado Libre.
+							     			 </div>
+							    	</div>
+					  			</div>
+
 		</article>
 	</section>
 		<!-- cierre contenido -->
@@ -102,8 +128,11 @@
       </footer>   
     </div>
      <!--cierre footer--> 
-	 <!-- jQuery  Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+     <!--SCRIPTS v5.0--> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!--SCRIPTS v.4.6--> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>

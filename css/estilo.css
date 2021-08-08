@@ -93,37 +93,6 @@ h1.titulo__catalogo{text-align: center; padding-top: 30px;}
 .img__nosotros{padding-top:50px;padding-bottom: 50px;}
 .text__nosotros {padding-left: 90px;padding-top: 50px; text-align:justify;}
 
-/* PREGUNTAS FRECUENTES */
-.preguntas {padding-left:40px;}
-.preguntas h3{text-align: left; 
-font-size: 20px; font-weight: normal;} 
-.preguntas p {text-align: left;
-font-size: 15px; font-weight: lighter;}
-
-.flexTitulo {
-  display: flex;
-  justify-content: left;
-  padding: 40px;}
-
-.titulo__preguntasF { font-weight: normal;
-  font-size: 40px;
-  color: #384369;
-  position: relative;
-  float: left;
-  padding-top: 0px; }
-.titulo__preguntasF span {
-  position: absolute;
-  right: 0;
-  width: 0;
-  background: white;
-  border-left: 3px solid #384369;
-  animation: escribir 4s steps(50) infinite alternate; }
-
-@keyframes escribir {
-  from {
-    width: 100%; }
-  to {
-    width: 0; } }
 
 
 
