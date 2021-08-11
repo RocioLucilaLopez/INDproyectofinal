@@ -1,0 +1,86 @@
+@import "colores";
+
+/*INDEX*/
+div .col-lg-4 {justify-content: right;}
+.destacadosCards { justify-content: space-between;
+                  grid-column-gap:inherit;
+                  padding:{ 
+                  left: 0px;
+                  top: 25px;}
+                  } 
+                  @media only screen and (max-width: 767px){ 
+.destacadosCards {padding-left: 45px;}
+   }
+.carousel .inner {width: 100px;}
+
+/*CONTACTO*/
+
+hr.divider { 
+  height: 0.2rem;
+  max-width: 5.25rem;
+  margin: 1.5rem auto;
+  background-color: $grisoscuro; 
+  opacity: 1; }
+.container__Contact{background-image: url(../Assets/img/contactito.png); 
+max-width: 100%;
+background-repeat:no-repeat ; background-position: center; width: 100% ;
+}
+.titulo__contacto{font-size: 50px;}
+.subtitulo__contacto{
+font-size: 25px;
+font-weight: normal; 
+}
+body section div .d-grid {text-align: center;}
+#submitButton {
+  background-color: #3d3f57;
+  border-radius: 50px 50px;
+  height: 50px;
+  width: 12rem; }
+
+#submitButton:hover{color: black;}
+
+/* CATALOGO */
+h1.titulo__catalogo{text-align: center; padding-top: 30px;}
+.slogan__catalogo{text-align: center;}
+.btn__tienda{height: 65px; width: 100px;}
+.py-5 .padding__catalogo{padding-top: 10px;}
+
+/* NOSOTROS */
+.titulo__nosotros{text-align: center; padding-top: 40px;}
+.img__nosotros{padding-top:50px;padding-bottom: 50px;}
+.text__nosotros {padding-left: 40px;padding-top: 50px; padding-right:0px; text-align:justify;
+font-size: 25px;}
+
+
+/* PREGUNTAS FRECUENTES */
+
+.preguntas {padding-left:40px;}
+.preguntas h3{text-align: left; 
+font-size: 20px; font-weight: normal;} 
+.preguntas p {text-align: left;
+font-size: 15px; font-weight: lighter;}
+
+.flexTitulo {
+  display: flex;
+  justify-content: left;
+  padding: 40px;}
+
+.titulo__preguntasF { font-weight: normal;
+  font-size: 40px;
+  color: #384369;
+  position: relative;
+  float: left;
+  padding-top: 0px; }
+.titulo__preguntasF span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 3px solid #384369;
+  animation: escribir 4s steps(50) infinite alternate; }
+
+@keyframes escribir {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }

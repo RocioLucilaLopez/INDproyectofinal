@@ -1,0 +1,41 @@
+@import "colores" ;
+
+/*ANIMACION GRAL TITULOS */
+
+h1 {
+	font-size:35px ;
+	animation-duration: 3s;
+	animation-name: aparecer; 
+}
+@keyframes aparecer {
+ 0% {
+ opacity: 0;
+ }
+ 100% {
+ opacity: 100;
+ }
+}
+
+/*ANIMACION TITULO PREGUNTAS FRECUENTES*/
+.titulo__preguntasF span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background: white;
+  border-left: 3px solid $grisclaro;
+  animation: escribir 4s steps(50) infinite alternate; }
+
+@keyframes escribir {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+
+/*ANIMACION ICONOS FOOTER*/
+  .Redes__img-footer {
+  padding: 15px;
+  transition: 1s; 
+  }
+
+  .Redes__img-footer:hover {
+  transform: translateY(-10px); }
