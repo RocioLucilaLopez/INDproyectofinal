@@ -13,14 +13,15 @@
 			align-items: center;
 			} 
 .footerBg h3 a {text-decoration: none;list-style-type: none;}
-.footerBg h3 {color: white; text-align: center; text-decoration: none; font-size: 15px; }
+.footerBg h3 {color: white; text-align: center; text-decoration: none; font-size: 25px; }
 h3 a {color: white;}
 h3 a:hover{color: $negro;}
 .footerBg {
-  background-image: url(../Assets/img/footerBg.jpg);
+  background-image: url(../Assets/img/BACKGROUND1.jpg);
   text-decoration: none;
   list-style-type: none; }
-
+.creador__creadorPagina {color:lightgrey; }
+.cophyright__copy {color:lightgrey;}
 .flexFooter {
   display: flex;
   flex-direction: column;

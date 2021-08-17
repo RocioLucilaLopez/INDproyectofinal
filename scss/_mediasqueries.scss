@@ -3,7 +3,7 @@
     
 @media only screen and (min-width: 1024px){
 	.navbar-expand-lg .navbar-collapse {justify-content: flex-end;}
-	.navbar-nav {font-size: 25px;
+	.navbar ul li a{font-size: 30px;
 				font-weight: 100;}
 	.card-text {font-family: ubuntu, sans-serif;
 	font-style: normal;
@@ -29,6 +29,8 @@
     -o-transform: scale(1.25);
     transform: scale(1.1); }
 }
+
+
 /*vista mobile*/
 
 @media only screen and (max-width: 767px){ 
@@ -54,13 +56,11 @@
     font-size: 25px;
     text-align: center; }
 
-    .card__Index { }
-
-   .Redes__img-footer {
+  .Redes__img-footer {
      padding-top: 15px;
     transition: 1s; 
      }
 
-	 .Redes__img-footer:hover {
+	.Redes__img-footer:hover {
     transform: translateY(-10px); }
 }

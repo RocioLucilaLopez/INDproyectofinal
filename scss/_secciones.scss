@@ -2,16 +2,19 @@
 
 /*INDEX*/
 div .col-lg-4 {justify-content: right;}
-.destacadosCards { justify-content: space-between;
-                  grid-column-gap:inherit;
+.destacadosCards { 
                   padding:{ 
-                  left: 0px;
+                  left: 100px;
+                  right: 100px;
                   top: 25px;}
                   } 
-                  @media only screen and (max-width: 767px){ 
-.destacadosCards {padding-left: 45px;}
-   }
-.carousel .inner {width: 100px;}
+.carousel .inner {width: 100%;}
+.subtitle__catalogo {   
+                      padding:{ 
+                      top: 35px; 
+                      bottom: 10px; 
+                      } 
+                    }  
 
 /*CONTACTO*/
 
@@ -43,7 +46,14 @@ body section div .d-grid {text-align: center;}
 h1.titulo__catalogo{text-align: center; padding-top: 30px;}
 .slogan__catalogo{text-align: center;}
 .btn__tienda{height: 65px; width: 100px;}
-.py-5 .padding__catalogo{padding-top: 10px;}
+.py-5 .padding__catalogo{padding-top: 0px;}
+.cards{border: none;}   
+.btn-primary:hover{color:black;}
+.btn-primary {
+    color: #fff;
+    background-color: darkgrey;
+    border-color: #1d2124;
+    }
 
 /* NOSOTROS */
 .titulo__nosotros{text-align: center; padding-top: 40px;}

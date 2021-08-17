@@ -39,3 +39,15 @@ h1 {
 
   .Redes__img-footer:hover {
   transform: translateY(-10px); }
+
+  /*ANIMACION CARDS CATALOGO*/
+  .img-tienda {
+    border-radius: 10px 10px 10px 10px;
+    padding: 0px;
+    -webkit-transition: all 0.8s ease; }
+  .img-tienda:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.1); }

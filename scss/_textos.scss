@@ -1,9 +1,13 @@
 .txt__Index p { justify-content: center;
 font-size:30px; 
-padding-top: 60px;
+padding: 40px 40px;
 font-weight:light;
 }
-.title__subtitle__Index h1  {text-align:center;
+.title__subtitle__Index {padding-top:45px;
+						 padding-bottom:25px;}
+						 h1  {text-align:center;
 							align-content:center;
 							justify-content:center;
-							align-items: center;}
+							align-items: center;
+							}
+.btn.btn-outline-dark {font-size:2rem; font-weight: bold;}
