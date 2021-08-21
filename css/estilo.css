@@ -14,6 +14,13 @@ div .col-lg-4 {
   padding-top: 35px;
   padding-bottom: 10px; }
 
+.btn-outline-dark a {
+  color: black; }
+
+.btn-outline-dark a:hover {
+  color: white;
+  text-decoration: none; }
+
 /*CONTACTO*/
 hr.divider {
   height: 0.2rem;
@@ -74,47 +81,21 @@ h1.titulo__catalogo {
   background-color: darkgrey;
   border-color: #1d2124; }
 
-/* NOSOTROS */
-.titulo__nosotros {
-  text-align: center;
-  padding-top: 40px; }
+/*CARDS CATALOGO*/
+.card {
+  border: 0px solid rgba(0, 0, 0, 0); }
 
-.img__nosotros {
-  padding-top: 50px;
-  padding-bottom: 50px; }
-
-.text__nosotros {
-  padding-left: 40px;
-  padding-top: 50px;
-  padding-right: 0px;
-  text-align: justify;
-  font-size: 25px; }
+.card-body {
+  padding-top: 10px;
+  padding-bottom: 40px; }
 
 /* PREGUNTAS FRECUENTES */
-.preguntas {
-  padding-left: 40px; }
-
-.preguntas h3 {
-  text-align: left;
-  font-size: 20px;
-  font-weight: normal; }
-
-.preguntas p {
-  text-align: left;
-  font-size: 15px;
-  font-weight: lighter; }
-
-.flexTitulo {
-  display: flex;
-  justify-content: left;
-  padding: 40px; }
-
 .titulo__preguntasF {
   font-weight: normal;
   font-size: 40px;
   color: #384369;
   position: relative;
-  float: left;
+  float: center;
   padding-top: 0px; }
 
 .titulo__preguntasF span {
@@ -124,6 +105,13 @@ h1.titulo__catalogo {
   background: white;
   border-left: 3px solid #384369;
   animation: escribir 4s steps(50) infinite alternate; }
+
+h2 a {
+  text-decoration: none; }
+
+h2 a:hover {
+  color: #7f868c;
+  text-decoration: none; }
 
 @keyframes escribir {
   from {
@@ -158,7 +146,7 @@ h3 a:hover {
   color: #1f2021; }
 
 .footerBg {
-  background-image: url(../Assets/img/BACKGROUND1.jpg);
+  background-image: url(../Assets/img/Bg__footer.jpg);
   text-decoration: none;
   list-style-type: none; }
 
@@ -180,6 +168,13 @@ h3 a:hover {
 .Redes__img-footer:hover {
   transform: translateY(-10px); }
 
+.call__to__action h3 {
+  font-size: 20px; }
+
+a.creadorPagina__creador:hover {
+  color: #7f868c;
+  text-decoration: none; }
+
 /*ANIMACION GRAL TITULOS */
 h1 {
   font-size: 35px;
@@ -191,21 +186,6 @@ h1 {
     opacity: 0; }
   100% {
     opacity: 100; } }
-
-/*ANIMACION TITULO PREGUNTAS FRECUENTES*/
-.titulo__preguntasF span {
-  position: absolute;
-  right: 0;
-  width: 0;
-  background: white;
-  border-left: 3px solid #d4d5d6;
-  animation: escribir 4s steps(50) infinite alternate; }
-
-@keyframes escribir {
-  from {
-    width: 100%; }
-  to {
-    width: 0; } }
 
 /*ANIMACION ICONOS FOOTER*/
 .Redes__img-footer {
@@ -228,6 +208,28 @@ h1 {
   -o-transform: scale(1.25);
   transform: scale(1.1); }
 
+/*ANIMACION GALERIA NOSOTROS*/
+#demo {
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.img-zoom {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out; }
+
+.transition {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2); }
+
 /*general NAV*/
 .navbar {
   background-image: url(../Assets/img/BACKGROUNDliso.jpg);
@@ -249,6 +251,16 @@ h1 {
 .navbar-nav {
   font-weight: lighter; }
 
+button .navbar-toggler {
+  color: #ffffff; }
+
+span .navbar-toggler-icon {
+  color: #ffffff; }
+
+.navbar-light .navbar-toggler {
+  color: #e9ecef;
+  border-color: #f5f6f7; }
+
 /*vista desktop*/
 @media only screen and (min-width: 1024px) {
   .navbar-expand-lg .navbar-collapse {
@@ -257,9 +269,10 @@ h1 {
     font-size: 30px;
     font-weight: 100; }
   .card-text {
+    font-size: 18px;
     font-family: ubuntu, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: lighter;
     text-align: center;
     justify-content: space-between;
     align-content: center; }
@@ -317,7 +330,20 @@ h1 {
     padding-top: 15px;
     transition: 1s; }
   .Redes__img-footer:hover {
-    transform: translateY(-10px); } }
+    transform: translateY(-10px); }
+  .img__faQ {
+    align-self: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    overflow-x: hidden; }
+  hr.divider {
+    height: 0.2rem;
+    max-width: 5.25rem;
+    margin: 1.2rem auto; }
+  button .navbar-toggler .collapse {
+    color: #ffffff; }
+  span .navbar-toggler-icon {
+    color: #ffffff; } }
 
 .txt__Index p {
   justify-content: center;
@@ -335,18 +361,108 @@ h1 {
   justify-content: center;
   align-items: center; }
 
-.btn.btn-outline-dark {
-  font-size: 2rem;
-  font-weight: bold; }
+.row .txt2__Index {
+  align-self: center; }
+
+/* NOSOTROS */
+.text__nosotros {
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  font-size: 28px; }
+
+.titulo__nosotros {
+  text-align: center;
+  padding-top: 40px; }
+
+.text__nosotrosB {
+  font-size: 28px;
+  align-self: center;
+  text-align: center; }
+
+.subtitulo__nosotros {
+  padding: 20px 20px; }
+
+/* CONTACTO */
+.btn {
+  font-size: 2rem; }
+
+.Newsletter {
+  font-size: 1rem; }
+
+/* CATALOGO */
+.btn-primary {
+  font-size: 18px; }
+
+/* FAQ*/
+.accordion {
+  font-family: ubuntu; }
+
+.mb-0 {
+  font-family: ubuntu; }
+
+.faQ__answer {
+  font-family: Ubuntu;
+  font-size: 18px; }
+
+a {
+  color: #45494c;
+  text-decoration: none; }
 
 * {
   Margin: 0;
   padding: 0; }
 
+/*NOSOTROS*/
+.zoom {
+  padding: 7px; }
+
+.inspo__galeria {
+  padding-bottom: 30px; }
+
+.container__galeria {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.col-lg-1 {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.page-section {
+  padding-bottom: 30px; }
+
+/*FAQ*/
+.container__faQ {
+  padding: 0px; }
+
+.img__faQ {
+  align-self: center;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 30px; }
+  @media only screen and (max-width: 767px) {
+    .img__faQ {
+      padding-top: 0px; } }
+
+.title__faQ {
+  padding-top: 0px;
+  margin-top: 15px; }
+
 .img__Index2 {
   padding-top: 0px;
   padding-bottom: 25px;
   width: 380; }
+
+/* NOSOTROS */
+.img__nosotros {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+img__nosotrosB {
+  padding-right: 80px; }
 
 body {
   overflow-x: hidden; }
@@ -361,3 +477,115 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   font-family: ubuntu, sans-serif; }
+
+.navbar-toggler .collapse {
+  color: white; }
+
+.accordion {
+  margin: 40px 0; }
+
+.accordion .item {
+  border: none;
+  margin-bottom: 50px;
+  background: none; }
+
+.t-p {
+  padding: 40px 30px 0px 30px; }
+
+.accordion .item .item-header h2 button.btn.btn-link {
+  background: #000000;
+  color: white;
+  border-radius: 0px;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+  text-decoration: none; }
+
+.accordion .item .item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px; }
+
+.accordion .item .item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left; }
+
+.accordion .item .item-header h2 i {
+  float: right;
+  font-size: 30px;
+  color: #eca300;
+  background-color: black;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; }
+
+button.btn.btn-link.collapsed i {
+  transform: rotate(0deg); }
+
+button.btn.btn-link i {
+  transform: rotate(180deg);
+  transition: 0.5s; }
+
+.accordion {
+  margin: 40px 0; }
+
+.accordion .item {
+  border: none;
+  margin-bottom: 50px;
+  background: none; }
+
+.t-p {
+  color: black;
+  padding: 40px 30px 0px 30px; }
+
+.accordion .item .item-header h2 button.btn.btn-link {
+  background: #333435;
+  color: white;
+  border-radius: 0px;
+  font-family: 'Ubuntu';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+  text-decoration: none; }
+
+.accordion .item .item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px; }
+
+.accordion .item .item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left; }
+
+.accordion .item .item-header h2 i {
+  float: right;
+  font-size: 30px;
+  color: #eca300;
+  background-color: black;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; }
+
+button.btn.btn-link.collapsed i {
+  transform: rotate(0deg); }
+
+button.btn.btn-link i {
+  transform: rotate(180deg);
+  transition: 0.5s; }

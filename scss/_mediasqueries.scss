@@ -5,9 +5,11 @@
 	.navbar-expand-lg .navbar-collapse {justify-content: flex-end;}
 	.navbar ul li a{font-size: 30px;
 				font-weight: 100;}
-	.card-text {font-family: ubuntu, sans-serif;
+	.card-text {
+	font-size: 18px;
+	font-family: ubuntu, sans-serif;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: lighter;
 	text-align: center;
 	justify-content: space-between;
 	align-content: center;}
@@ -63,4 +65,16 @@
 
 	.Redes__img-footer:hover {
     transform: translateY(-10px); }
+
+	.img__faQ {align-self:center;padding-top:0px;padding-bottom:0px; overflow-x:hidden;}
+	 
+
+	hr.divider {
+    height: 0.2rem;
+    max-width: 5.25rem;
+    margin: 1.2rem auto;
+   }
+
+  button .navbar-toggler .collapse{color:#ffffff;}
+  span .navbar-toggler-icon {color:#ffffff;}
 }

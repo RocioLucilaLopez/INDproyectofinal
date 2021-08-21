@@ -16,20 +16,6 @@ h1 {
  }
 }
 
-/*ANIMACION TITULO PREGUNTAS FRECUENTES*/
-.titulo__preguntasF span {
-  position: absolute;
-  right: 0;
-  width: 0;
-  background: white;
-  border-left: 3px solid $grisclaro;
-  animation: escribir 4s steps(50) infinite alternate; }
-
-@keyframes escribir {
-  from {
-    width: 100%; }
-  to {
-    width: 0; } }
 
 /*ANIMACION ICONOS FOOTER*/
   .Redes__img-footer {
@@ -51,3 +37,30 @@ h1 {
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
     transform: scale(1.1); }
+
+/*ANIMACION GALERIA NOSOTROS*/
+#demo {
+  height:100%;
+  position:relative;
+  overflow:hidden;
+}
+
+.img-zoom{
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+

@@ -15,6 +15,9 @@ div .col-lg-4 {justify-content: right;}
                       bottom: 10px; 
                       } 
                     }  
+.btn-outline-dark a{color: black;}
+.btn-outline-dark a:hover{color: $blanco; text-decoration:none;}
+
 
 /*CONTACTO*/
 
@@ -55,31 +58,24 @@ h1.titulo__catalogo{text-align: center; padding-top: 30px;}
     border-color: #1d2124;
     }
 
-/* NOSOTROS */
-.titulo__nosotros{text-align: center; padding-top: 40px;}
-.img__nosotros{padding-top:50px;padding-bottom: 50px;}
-.text__nosotros {padding-left: 40px;padding-top: 50px; padding-right:0px; text-align:justify;
-font-size: 25px;}
+
+/*CARDS CATALOGO*/
+
+.card {border: 0px solid rgba(0,0,0,0);
+}
+.card-body {
+    padding-top:10px;
+    padding-bottom:40px;
+}
 
 
 /* PREGUNTAS FRECUENTES */
-
-.preguntas {padding-left:40px;}
-.preguntas h3{text-align: left; 
-font-size: 20px; font-weight: normal;} 
-.preguntas p {text-align: left;
-font-size: 15px; font-weight: lighter;}
-
-.flexTitulo {
-  display: flex;
-  justify-content: left;
-  padding: 40px;}
 
 .titulo__preguntasF { font-weight: normal;
   font-size: 40px;
   color: #384369;
   position: relative;
-  float: left;
+  float: center;
   padding-top: 0px; }
 .titulo__preguntasF span {
   position: absolute;
@@ -88,6 +84,8 @@ font-size: 15px; font-weight: lighter;}
   background: white;
   border-left: 3px solid #384369;
   animation: escribir 4s steps(50) infinite alternate; }
+h2 a{text-decoration:none;}
+h2 a:hover{color: #7f868c; text-decoration:none;}
 
 @keyframes escribir {
   from {

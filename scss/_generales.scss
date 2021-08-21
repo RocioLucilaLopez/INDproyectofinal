@@ -1,4 +1,4 @@
-
+@import "colores";
 body { overflow-x: hidden;}
 body { 	
 		font:{
@@ -9,3 +9,4 @@ body {
     	text-align:center; 
      }	
 .container-fluid { padding-left: 0px; padding-right: 0px; font-family:ubuntu, sans-serif;} 
+.navbar-toggler .collapse{color:$blanco;}

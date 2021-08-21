@@ -10,4 +10,48 @@ font-weight:light;
 							justify-content:center;
 							align-items: center;
 							}
-.btn.btn-outline-dark {font-size:2rem; font-weight: bold;}
+.row .txt2__Index{align-self:center;}
+
+
+/* NOSOTROS */
+.text__nosotros {
+				text-align:center; 
+				align-self: center; 
+				align-content: center;
+				font-size: 28px;
+				}
+.titulo__nosotros{
+					text-align: center; 
+					padding-top: 40px;
+					}
+.text__nosotrosB {
+					font-size:28px; 
+					align-self:center;
+					text-align:center;
+				 }
+.subtitulo__nosotros {
+						padding:20px 20px;
+				}
+
+
+/* CONTACTO */
+.btn {
+    	font-size: 2rem;
+		}
+
+
+.Newsletter {font-size:1rem;}
+
+/* CATALOGO */
+.btn-primary{ font-size:18px;}
+
+/* FAQ*/
+
+.faQ{}
+.accordion {font-family: ubuntu;}
+.mb-0 {font-family:ubuntu;}
+.faQ__answer{font-family:Ubuntu; font-size:18px;}
+a {
+    color: #45494c;
+    text-decoration: none;
+}
