@@ -316,8 +316,6 @@ span .navbar-toggler-icon {
     align-content: center; }
   .container-fluid {
     justify-content: space-between; }
-  body {
-    overflow-x: hidden; }
   .card-text {
     font-family: ubuntu, sans-serif;
     font-style: normal;
@@ -367,7 +365,12 @@ span .navbar-toggler-icon {
     padding-left: 0px; }
   .row img__nosotros {
     margin-right: 0px;
-    margin-left: -15px; } }
+    margin-left: -15px; }
+  .title__subtitle__Index {
+    padding-left: 25px;
+    padding-right: 25px; }
+  body {
+    overflow-x: hidden; } }
 
 .txt__Index p {
   justify-content: center;
