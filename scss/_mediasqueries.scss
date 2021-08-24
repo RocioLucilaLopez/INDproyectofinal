@@ -30,7 +30,13 @@
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
     transform: scale(1.1); }
+  .container__Contact .px-4 .px-lg-5 { margin:0px; padding:0px; }
+
+  .container__Contact{background-image: url(../Assets/img/contactito.png); 
+  background-repeat:repeat ; background-position: center; width: 100% ;
 }
+}
+
 
 
 /*vista mobile*/
@@ -58,23 +64,32 @@
     font-size: 25px;
     text-align: center; }
 
-  .Redes__img-footer {
-     padding-top: 15px;
-    transition: 1s; 
+   .Redes__img-footer {
+      padding-top: 15px;
+      transition: 1s; 
      }
 
-	.Redes__img-footer:hover {
-    transform: translateY(-10px); }
+	 .Redes__img-footer:hover {
+     transform: translateY(-10px); }
 
-	.img__faQ {align-self:center;padding-top:0px;padding-bottom:0px; overflow-x:hidden;}
+	  .img__faQ {align-self:center;padding-top:0px;padding-bottom:0px; overflow-x:hidden;}
 	 
 
-	hr.divider {
+	  hr.divider {
     height: 0.2rem;
     max-width: 5.25rem;
     margin: 1.2rem auto;
    }
 
-  button .navbar-toggler .collapse{color:#ffffff;}
-  span .navbar-toggler-icon {color:#ffffff;}
-}
+    button .navbar-toggler .collapse{color:#ffffff;}
+    span .navbar-toggler-icon {color:#ffffff;}
+
+    .img__nosotrosB { width:98%;padding-right:0px; padding-bottom: 20px;}
+
+   .img__nosotros { width:98%;padding-right:0px;padding-left:0px; }
+   div .col-lg-5 .col-xs-12{ padding:0px;padding-left:0px; }
+   .row img__nosotros{
+	   margin-right: 0px; 
+	   margin-left: -15px;}
+ }
+

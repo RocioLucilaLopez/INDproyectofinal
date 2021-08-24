@@ -32,7 +32,6 @@ hr.divider {
 .container__Contact {
   background-image: url(../Assets/img/contactito.png);
   max-width: 100%;
-  background-repeat: no-repeat;
   background-position: center;
   width: 100%; }
 
@@ -297,7 +296,15 @@ span .navbar-toggler-icon {
     -moz-transform: scale(1.25);
     -ms-transform: scale(1.25);
     -o-transform: scale(1.25);
-    transform: scale(1.1); } }
+    transform: scale(1.1); }
+  .container__Contact .px-4 .px-lg-5 {
+    margin: 0px;
+    padding: 0px; }
+  .container__Contact {
+    background-image: url(../Assets/img/contactito.png);
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%; } }
 
 /*vista mobile*/
 @media only screen and (max-width: 767px) {
@@ -343,7 +350,21 @@ span .navbar-toggler-icon {
   button .navbar-toggler .collapse {
     color: #ffffff; }
   span .navbar-toggler-icon {
-    color: #ffffff; } }
+    color: #ffffff; }
+  .img__nosotrosB {
+    width: 98%;
+    padding-right: 0px;
+    padding-bottom: 20px; }
+  .img__nosotros {
+    width: 98%;
+    padding-right: 0px;
+    padding-left: 0px; }
+  div .col-lg-5 .col-xs-12 {
+    padding: 0px;
+    padding-left: 0px; }
+  .row img__nosotros {
+    margin-right: 0px;
+    margin-left: -15px; } }
 
 .txt__Index p {
   justify-content: center;
@@ -378,7 +399,8 @@ h1 {
 .text__nosotrosB {
   font-size: 28px;
   align-self: center;
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
 
 .subtitulo__nosotros {
   padding: 20px 20px; }
@@ -460,9 +482,6 @@ a {
   padding-bottom: 20px;
   padding-left: 0px;
   padding-right: 0px; }
-
-img__nosotrosB {
-  padding-right: 80px; }
 
 body {
   overflow-x: hidden; }
